@@ -2,10 +2,13 @@ import React from 'react'
 import ContactForm from '../components/ContactForm'
 import { NavLink } from 'react-router-dom'
 import { contactInfo } from '../data/data'
+import SEO from '../seo/SEO';
+import { contactPageSeoProps } from '../seo/seoProps';
 function Contact() {
 
     return (
         <div>
+            <SEO {...contactPageSeoProps} />
             <section id="contact_form" className="relative py-20 bg-neutral-900">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
